@@ -1,0 +1,58 @@
+footer {
+  height: 200px;
+  background-color: rgb(0, 0, 81);
+  padding-top: 20px;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-section,
+.middle-section {
+  margin: 7.5px auto;
+}
+
+footer button {
+  color: rgb(255, 189, 0);
+  font-size: 13px;
+  height: 26px;
+  border: 3px solid rgb(255, 189, 0);
+  border-radius: 10px;
+  padding: 2px 15px;
+  margin: 0;
+}
+
+footer button:hover {
+  color: rgb(0, 0, 81);
+  height: 26px;
+  padding: 0px 20px;
+  background-color: rgb(255, 189, 0);
+}
+
+.upper-section p {
+  font-size: 13px;
+}
+
+.middle-section img {
+  margin: 0px 8px;
+  width: 20px;
+}
+
+.lower-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+.lower-section p {
+  font-size: 9px;
+}
+
+.university-logo {
+  width: 150px;
+  margin: 0 auto;
+}
