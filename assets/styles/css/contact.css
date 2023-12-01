@@ -24,12 +24,12 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #3498db;
+  background-color: rgb(11, 134, 216);
   color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 input[type="submit"]:hover {
-  background-color: #2980b9;
+  background-color: rgb(0, 0, 81)
 }
