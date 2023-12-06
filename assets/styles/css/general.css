@@ -1,7 +1,11 @@
 * {
   font-family: Exo, Arial;
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -9,6 +13,9 @@ body {
   color: rgb(0, 0, 81);
   padding-top: 120px;
   margin-left: 220px;
+  min-height: 100%;
+  position: relative;
+  box-sizing: inherit;
 }
 
 strong {
