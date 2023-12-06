@@ -1,13 +1,10 @@
 .sidebar {
-  padding-left: 20px;
   padding-top: 100px ;
-  width: 50%;
+  width: 200px;
   height: 100%;
-  background-color: rgba(0, 0, 81, 0.75);
+  background-color: rgba(0, 0, 81);
   position: fixed;
   top: 0;
-  left: -50%;
-  transition: left 0.5s ease-in-out;
 }
 
 .sidebar a {
@@ -20,6 +17,7 @@
 
 .sidebar a:hover {
   color: rgb(0, 0, 81);
+  padding-left: 30px;
   background-color: rgb(255, 189, 0);
   transition: 0.3s;
 }
@@ -28,19 +26,45 @@
   display: none;
 }
 
-#toggle-label {
-  margin: 0;
-  cursor: pointer;
-  z-index: 2;
-  color: #fff;
-  user-select: none;
-}
 
-#toggle-label::before {
-  z-index: 1;
+@media only screen and (max-width:961px) {
+  .sidebar {
+    padding-top: 100px ;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 81, 0.75);
+    position: fixed;
+    top: 0;
+    left: -60%;
+    transition: left 0.5s;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 15px 0 15px 10%;
+    text-decoration: none;
+    color: rgb(255, 189, 0);
+    z-index: 100;
+  }
+  
+  .sidebar a:hover {
+    color: rgb(0, 0, 81);
+    padding-left: 30px;
+    background-color: rgb(255, 189, 0);
+    transition: 0.3s;
+  }
+  
+  #toggle-checkbox {
+    display: none;
+  }
+  
+  #toggle-label {
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+    
+  #toggle-checkbox:checked ~ .sidebar {
+    left: 0;
+  }  
 }
-
-#toggle-checkbox:checked ~ .sidebar {
-  left: 0;
-}
-
