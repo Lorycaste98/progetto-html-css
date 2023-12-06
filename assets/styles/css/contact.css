@@ -38,6 +38,7 @@ input[type="submit"]:hover {
   form {
     width: auto;
     max-width: 700px;
+    margin: 30px auto;
   }  
 }
 
